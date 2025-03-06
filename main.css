@@ -1,1 +1,33 @@
 
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    width: 100%; 
+    padding: 20px;     
+ }
+
+.search-button {
+    background-color: lightblue;
+    font-size: 10px;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    margin-left: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+ }
+
+.searchBox {
+    padding: 15px;
+    width: 400px; 
+    border: 3px solid black;
+    border-radius: 6px;
+    font-size: 18px;
+ }
+
+.search-button:hover {
+    background-color: #87cefa;
+ }
+
+
