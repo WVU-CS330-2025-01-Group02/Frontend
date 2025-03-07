@@ -21,35 +21,37 @@ Question is above the four selectable answers
 
 
 <body>
-    <a href="index.html">
+    <a href="https://github.com/nodejs/node-gyp#on-windows">
         <div class="logo">Logo</div>
     </a>
 
     <div class="progress-container">
-        <div class="progress-bar" style="width: 20%;"></div> 
+        <div id="progress-bar" class="progress-bar" style="width: 100%;"></div> 
     </div>
 
     <h2 class="question">Random question here</h2>
 
     <div class="options-container">
-        <div class="option">
-            <img src="cat.png" alt="Option 1">
+        <button class="option" onclick="selectAnswer(0)">
+            
+            <img src="images/default.png" alt="Option 1">
             <p>Option 1 description</p>
-        </div>
-        <div class="option">
-            <img src="rouge.png" alt="Option 2">
+        </button>
+        <button class="option" onclick="selectAnswer(1)">
+            <img src="images/default.png" alt="Option 2">
             <p>Option 2 description</p>
-        </div>
-        <div class="option">
-            <img src="shoa_dead.JPG" alt="Option 3">
+        </button>
+        <button class="option" onclick="selectAnswer(2)">
+            <img src="images/default.png" alt="Option 3">
             <p>Option 3 description</p>
-        </div>
-        <div class="option">
-            <img src="smiley.png" alt="Option 4">
+        </button>
+        <button class="option" onclick="selectAnswer(3)">
+            <img src="images/default.png" alt="Option 4">
             <p>Option 4 description</p>
-        </div>
+        </button>
     </div>
 
+    <script src="script.js"></script>
 </body>
 
 </html>

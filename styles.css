@@ -34,8 +34,6 @@ body{
 }
 
 .progress-bar {
-    width: 100%;
-    height: 20%; 
     background: black;
     transition: height 0.3s ease-in-out;
 }
@@ -51,25 +49,24 @@ body{
     width: 60%;
 }
 
-.options-container{
+.options-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    grid-template-columns: repeat(2, 1fr); /* Keeps 2 columns */
+    gap: 15px;
     padding: 20px;
-    height: auto;
-    width: 40%;
+    width: 60%;  /* Increase width */
     margin: auto;
 }
 
-.option{
+.option {
     display: flex;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: column; /* Keep image on top */
     align-items: center;
-
-    padding: 5px;  
-    height: 150px;
+    justify-content: center;
+    
+    height: 200px; /* Flattened height */
+    width: 100%; /* Wider */
+    
     background: white;
     border: 2px solid black;
     padding: 10px;
@@ -78,17 +75,18 @@ body{
     transition: transform 0.2s ease-in-out;
 }
 
-.option img{
-    height: auto;
-    max-height: 125px;
-    width: auto;
+.option img {
+    height: 120px; /* Reduce image size slightly */
+    width: 100%;
 }
 
 .option p {
     font-weight: bold;
-    margin-top: 10px;
+    margin-top: 40px; /* Reduce space between image and text */
 }
 
 .option:hover {
     transform: scale(1.05);
 }
+
+
