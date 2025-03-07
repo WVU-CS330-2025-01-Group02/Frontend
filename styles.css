@@ -21,9 +21,9 @@ body{
 
 .progress-container {
     position: absolute;
-    left: 10px;
+    right: 100px;
     top: 80px;
-    width: 20px;
+    width: 40px;
     height: 300px;
     background: #ddd;
     border-radius: 10px;
@@ -35,7 +35,7 @@ body{
 
 .progress-bar {
     width: 100%;
-    height: 20%; /* Change dynamically */
+    height: 20%; 
     background: black;
     transition: height 0.3s ease-in-out;
 }
@@ -54,13 +54,22 @@ body{
 .options-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    gap: 10px;
     padding: 20px;
-    width: 60%;
+    height: auto;
+    width: 40%;
     margin: auto;
 }
 
 .option{
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 5px;  
+    height: 150px;
     background: white;
     border: 2px solid black;
     padding: 10px;
@@ -70,9 +79,9 @@ body{
 }
 
 .option img{
-    width: 100%;
-    height: auto;
-    display: block;
+    height: 200px;
+    max-height: 125px;
+    width: auto;
 }
 
 .option p {
