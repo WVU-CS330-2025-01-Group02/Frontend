@@ -79,7 +79,7 @@ body{
 }
 
 .option img{
-    height: 200px;
+    height: auto;
     max-height: 125px;
     width: auto;
 }
