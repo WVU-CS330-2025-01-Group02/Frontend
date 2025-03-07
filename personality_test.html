@@ -1,4 +1,5 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
+<html lang="en">
 <!-- 
 TODO:
 Put logo in the corner of the page; hyperlink it to lead back to the homepage. Also means its a button
@@ -11,17 +12,43 @@ Question is above the four selectable answers
 <html>
 
 <head>
-    <link href="styles.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Page</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
-<h2>Question Here</h2>
+
 
 <body>
-    <img src="Question_1_img.jpg">
-    <img src="Question_2_img.jpg">
-    <img src="Question_3_img.jpg">
-    <img src="Question_4_img.jpg">
+    <a href="index.html">
+        <div class="logo">Logo</div>
+    </a>
 
+    <div class="progress-container">
+        <div class="progress-bar" style="width: 20%;"></div> 
+    </div>
+
+    <h2 class="question">Random question here</h2>
+
+    <div class="options-container">
+        <div class="option">
+            <img src="cat.png" alt="Option 1">
+            <p>Option 1 description</p>
+        </div>
+        <div class="option">
+            <img src="rouge.png" alt="Option 2">
+            <p>Option 2 description</p>
+        </div>
+        <div class="option">
+            <img src="renface.jpg" alt="Option 3">
+            <p>Option 3 description</p>
+        </div>
+        <div class="option">
+            <img src="smiley.png" alt="Option 4">
+            <p>Option 4 description</p>
+        </div>
+    </div>
 
 </body>
 

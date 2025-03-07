@@ -1,0 +1,85 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: skyblue;
+}
+
+.logo{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: black;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.progress-container {
+    position: absolute;
+    left: 10px;
+    top: 80px;
+    width: 20px;
+    height: 300px;
+    background: #ddd;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 20%; /* Change dynamically */
+    background: black;
+    transition: height 0.3s ease-in-out;
+}
+
+.question{
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 50px;
+    padding: 20px;
+    background: white;
+    border: 2px solid black;
+    display: inline-block;
+    width: 60%;
+}
+
+.options-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    width: 60%;
+    margin: auto;
+}
+
+.option{
+    background: white;
+    border: 2px solid black;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.option img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.option p {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.option:hover {
+    transform: scale(1.05);
+}
