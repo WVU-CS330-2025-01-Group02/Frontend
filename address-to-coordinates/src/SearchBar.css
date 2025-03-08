@@ -1,0 +1,50 @@
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    width: 100%; 
+    padding: 20px;     
+    padding: 20px;
+    margin-top: 175px;
+ }
+
+.search-button {
+    background-color: lightblue;
+    font-size: 10px;
+    font-size: 13px;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    margin-left: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+ }
+
+.searchBox {
+    padding: 15px;
+    width: 400px; 
+    border: 3px solid black;
+    border-radius: 6px;
+    font-size: 18px;
+ }
+
+.search-button:hover {
+    background-color: darkcyan;
+ }
+.datePick {
+   padding: 5px;
+   width: 65px; 
+   border: 2px solid black;
+   border-radius: 4px;
+   font-size: 10px;
+   margin-left: 5px;
+   margin-right: 5px;
+}
+
+.select-dates {
+      margin-left: 15px;
+}
+#coordinates-display {
+    color: blue;
+    font-size: 12px;
+}
