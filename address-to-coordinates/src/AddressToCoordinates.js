@@ -4,10 +4,10 @@ import './SearchBar.css';
 const AddressToCoordinates = () => { 
     const [address, setAddress] = useState(""); // Stores user input 
     const [coordinates, setCoordinates] = useState(null); // Stores coordinates
-    const apiKey = "8ef9024cc83f4b8c8dfafc430277447f";
+    const API_KEY = process.env.REACT_APP_API_KEY;
 
     const fetchCoordinates = async () => { 
-        const url = `https://api.geoapify.com/v1/geocode/search?text=${encodeURIComponent(address)}&apiKey=${apiKey}`;
+        const url = `https://api.geoapify.com/v1/geocode/search?text=${encodeURIComponent(address)}&apiKey=${API_KEY}`;
 
         const requestOptions = { 
             method: "GET",
@@ -20,11 +20,9 @@ const AddressToCoordinates = () => {
             if (data.features.length > 0) {
                 const { lat, lon } = data.features[0].properties;
 
-                //Check with group if this is necessary
-                //Some come up as positive on google but are negative
-                const adjustedLon = lon < 0 ? Math.abs(lon) : lon; //Ensures its positive 
+                
 
-                setCoordinates({ lat, lon: adjustedLon });
+                setCoordinates({ lat, lon });
             } else {
                 setCoordinates(null);
                 alert("Address not found");
