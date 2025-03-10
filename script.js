@@ -68,7 +68,7 @@ function selectAnswer(selectedIndex) {
         updateQuiz();
     } else {
         progress += 20;
-        updateQuiz();
+        document.getElementById("progress-bar").style.height = `${progress}%`;
     }
 }
 
