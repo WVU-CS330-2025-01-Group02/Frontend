@@ -1,3 +1,14 @@
+/*
+TODO:
+Incorporate REACT into this to make the website more dynamic what with UI design and creating
+a more dynamic experience.
+jQUERY stuff too maybe.
+ADD more questions. We want 5 to 10 max 
+ADD Retake Quiz Button
+ADD Back button
+Make another finished message that's not a browser message. 
+*/
+
 const questions = [
     {
         question: "What type of weather do you like?",
@@ -16,6 +27,33 @@ const questions = [
             { img: "images/ThrowDown", desc: "Forest" },
             { img: "images/tokyodrifter", desc: "Desert" },
         ]
+    },
+    {
+        question: "3",
+        options: [
+            {img: "", desc:""},
+            {img: "", desc:""},
+            {img: "", desc:""},
+            {img: "", desc:""},
+        ]
+    },
+    {
+        question: "4",
+        options: [
+            {img: "", desc:""},
+            {img: "", desc:""},
+            {img: "", desc:""},
+            {img: "", desc:""},
+        ]
+    },
+    {
+        question: "5",
+        options: [
+            {img: "", desc:""},
+            {img: "", desc:""},
+            {img: "", desc:""},
+            {img: "", desc:""},
+        ]
     }
 ];
 
@@ -23,13 +61,13 @@ let currentQuestion = 0;
 let progress = 0;
 
 function selectAnswer(selectedIndex) {
-    if (currentQuestion < questions.length - 1) {
+    if (currentQuestion < questions.length) {
         currentQuestion++;
-        progress += 10; // Increase progress bar
+        progress += 20; // Increase progress bar
         
         updateQuiz();
     } else {
-        alert("Quiz Complete!");
+        progress += 20;
     }
 }
 
