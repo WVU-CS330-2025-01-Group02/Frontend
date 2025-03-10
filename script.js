@@ -68,6 +68,7 @@ function selectAnswer(selectedIndex) {
         updateQuiz();
     } else {
         progress += 20;
+        updateQuiz();
     }
 }
 
