@@ -24,7 +24,7 @@ body{
     right: 100px;
     top: 80px;
     width: 40px;
-    height: 300px;
+    height: 300spx;
     background: #ddd;
     border-radius: 10px;
     display: flex;
@@ -87,6 +87,38 @@ body{
 
 .option:hover {
     transform: scale(1.05);
+}
+
+#retakeButton{
+    background-color: #4CAF50; 
+    color: white; 
+    font-size: 18px; 
+    padding: 10px 20px; 
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer; 
+    margin-top: 20px; 
+    display: none; 
+}
+
+#retakeButton:hover{
+    background-color: #45a049;
+}
+
+#backButton{
+    background-color: #4CAF50; 
+    color: white; 
+    font-size: 18px; 
+    padding: 10px 20px; 
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer; 
+    margin-top: 20px; 
+    display: none; 
+}
+
+#backButton:hover{
+    background-color: #45a049;
 }
 
 

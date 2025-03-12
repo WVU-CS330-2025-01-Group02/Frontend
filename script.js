@@ -20,7 +20,7 @@ const questions = [
         ]
     },
     {
-        question: "Pick a vacation destination",
+        question: "Pick a vacation destination!",
         options: [
             { img: "images/shoa_dead", desc: "Beach" },
             { img: "images/smiley", desc: "City" },
@@ -29,36 +29,55 @@ const questions = [
         ]
     },
     {
-        question: "3",
+        question: "What food do you like?",
         options: [
-            {img: "", desc:""},
-            {img: "", desc:""},
-            {img: "", desc:""},
-            {img: "", desc:""},
+            {img: "", desc:"Seafood"},
+            {img: "", desc:"Tacos"},
+            {img: "", desc:"Pizza"},
+            {img: "", desc:"Bread"},
         ]
     },
     {
-        question: "4",
+        question: "Pick an activity!",
         options: [
-            {img: "", desc:""},
-            {img: "", desc:""},
-            {img: "", desc:""},
-            {img: "", desc:""},
+            {img: "", desc:"Swimming"},
+            {img: "", desc:"Skiing"},
+            {img: "", desc:"Cycling"},
+            {img: "", desc:"Climbing"},
         ]
     },
     {
-        question: "5",
+        question: "Random Question",
         options: [
-            {img: "", desc:""},
-            {img: "", desc:""},
-            {img: "", desc:""},
-            {img: "", desc:""},
+            {img: "", desc:"1"},
+            {img: "", desc:"2"},
+            {img: "", desc:"3"},
+            {img: "", desc:"4"},
         ]
     }
 ];
 
 let currentQuestion = 0;
 let progress = 0;
+
+function retakeQuiz(){
+    currentQuestion = 0;
+    progress = 0;
+
+    document.getElementById("progress-bar").style.height = `${progress}%`;
+
+    document.getElementById("retakeButton").style.display = "none";
+
+    updateQuiz();
+}
+
+function backButton(){
+    if (currentQuestion >0){
+        currentQuestion--;
+        progress -= 20;
+        updateQuiz();
+    }
+}
 
 function selectAnswer(selectedIndex) {
     if (currentQuestion < questions.length) {
@@ -69,6 +88,7 @@ function selectAnswer(selectedIndex) {
     } else {
         progress += 20;
         document.getElementById("progress-bar").style.height = `${progress}%`;
+        document.getElementById("retakeButton").style.display = "inline-block";
     }
 }
 
@@ -97,6 +117,12 @@ function updateQuiz() {
 
     // Update progress bar height
     document.getElementById("progress-bar").style.height = `${progress}%`;
+
+    if (currentQuestion > 0){
+        document.getElementById("backButton").style.display = "inline-block";
+    } else{
+        document.getElementById("backButton").style.display = "none";
+    }
 }
 
 // Initialize quiz on page load
