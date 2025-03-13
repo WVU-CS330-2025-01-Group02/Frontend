@@ -7,6 +7,7 @@ ADD more questions. We want 5 to 10 max
 ADD Retake Quiz Button
 ADD Back button
 Make another finished message that's not a browser message. 
+Instead of a finished message, add a results page that accesses the database
 */
 
 const questions = [
