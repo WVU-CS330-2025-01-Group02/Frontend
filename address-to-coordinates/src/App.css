@@ -18,6 +18,9 @@ body {
   background-color: rgb(66, 159, 157); 
   text-align: center;
 }
+.Title{
+  margin-top: 50px;
+}
 
 .App-logo {
   height: 40vmin;

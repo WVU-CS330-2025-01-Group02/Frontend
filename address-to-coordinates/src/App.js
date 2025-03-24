@@ -28,6 +28,7 @@ function App() {
           <p>-</p>
           <input type="date" className="datePick" id="dateInput2" />
         </div>
+      </div>
         {coordinates && (
           <div className="coordinates-display">
             <p>
@@ -35,7 +36,7 @@ function App() {
             </p>
           </div>
         )}
-      </div>
+      
     </div>
   );
 }
