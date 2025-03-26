@@ -1,0 +1,124 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: skyblue;
+}
+
+.logo{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: black;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.progress-container {
+    position: absolute;
+    right: 100px;
+    top: 80px;
+    width: 40px;
+    height: 300px;
+    background: #ddd;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+
+.progress-bar {
+    background: black;
+    transition: height 0.3s ease-in-out;
+}
+
+.question{
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 50px;
+    padding: 20px;
+    background: white;
+    border: 2px solid black;
+    display: inline-block;
+    width: 60%;
+}
+
+.options-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Keeps 2 columns */
+    gap: 15px;
+    padding: 20px;
+    width: 60%;  /* Increase width */
+    margin: auto;
+}
+
+.option {
+    display: flex;
+    flex-direction: column; /* Keep image on top */
+    align-items: center;
+    justify-content: center;
+    
+    height: 200px; /* Flattened height */
+    width: 100%; /* Wider */
+    
+    background: white;
+    border: 2px solid black;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.option img {
+    height: 120px; /* Reduce image size slightly */
+    width: 100%;
+}
+
+.option p {
+    font-weight: bold;
+    margin-top: 40px; /* Reduce space between image and text */
+}
+
+.option:hover {
+    transform: scale(1.05);
+}
+
+#retakeButton{
+    background-color: #4CAF50; 
+    color: white; 
+    font-size: 18px; 
+    padding: 10px 20px; 
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer; 
+    margin-top: 20px; 
+    display: none; 
+}
+
+#retakeButton:hover{
+    background-color: #45a049;
+}
+
+#backButton{
+    background-color: #4CAF50; 
+    color: white; 
+    font-size: 18px; 
+    padding: 10px 20px; 
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer; 
+    margin-top: 20px; 
+    display: none; 
+}
+
+#backButton:hover{
+    background-color: #45a049;
+}
+
+
