@@ -1,5 +1,4 @@
 import React from "react";
-import './SearchBar.css';
 
 const AddressToCoordinates = ({ address, setCoordinates }) => { 
     const apiKey = "8ef9024cc83f4b8c8dfafc430277447f";
