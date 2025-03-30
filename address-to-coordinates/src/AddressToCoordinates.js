@@ -54,7 +54,10 @@ const AddressToCoordinates = ({ address, setCoordinates }) => {
     };
 
     return (
+        <div>
+        
         <button className="search-button" onClick={fetchCoordinates}>Search</button>
+        </div>
     );
 };
 

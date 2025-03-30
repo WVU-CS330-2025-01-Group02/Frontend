@@ -10,9 +10,12 @@ function App() {
     <div className="App">
       
       <h1>Weather We Go</h1>
-      <p>Enter an address to get the coordinates:</p>
+     
     
       <div className="search-container">
+        <div className="Address-text">
+        <p><strong>Enter an address to get coordinates:</strong></p>
+        </div>
         <input
           type="search"
           className="searchBox"
