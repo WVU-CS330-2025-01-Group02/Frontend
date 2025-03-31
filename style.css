@@ -83,3 +83,16 @@ a {
     justify-content: center;
     align-items: center;
 }
+
+.logo{
+    position: absolute;
+    top: 5px;
+    left: 600px;
+    background: black;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}

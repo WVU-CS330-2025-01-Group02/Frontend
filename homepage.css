@@ -1,4 +1,17 @@
-/* GENERAL */
+
+.logo{
+    position: absolute;
+    top: 5px;
+    left: 600px;
+    background: black;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
@@ -117,17 +130,4 @@ p {
     flex-wrap: wrap;
     gap: 15px;
     padding: 20px;
-}
-
-.logo{
-    position: absolute;
-    top: 5px;
-    left: 600px;
-    background: black;
-    color: white;
-    font-size: 24px;
-    font-weight: bold;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
 }
