@@ -3,9 +3,7 @@ TODO:
 Incorporate REACT into this to make the website more dynamic what with UI design and creating
 a more dynamic experience.
 jQUERY stuff too maybe.
-ADD more questions. We want 5 to 10 max 
-ADD Retake Quiz Button
-ADD Back button
+Fixed bugs
 Make another finished message that's not a browser message. 
 Instead of a finished message, add a results page that accesses the database
 */
