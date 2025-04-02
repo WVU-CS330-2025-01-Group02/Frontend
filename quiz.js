@@ -87,6 +87,8 @@ function backButton() {
     }
     if(currentQuestion == 0){
         progress = 0;
+        document.getElementById("retakeButton").style.display = "none";
+        updateQuiz();
     }
 }
 
