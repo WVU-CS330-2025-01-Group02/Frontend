@@ -4,11 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather We Go</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="site.css">
 </head>
 <body>
-    <div id="navbar"></div>
-    <script src="navbar.js"></script>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="index.html" id="navbar__logo">WeatherWeGo</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="index.html" class="navbar__links">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="top-cities.html" class="navbar__links">Top Cities</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="personality_test.html" class="navbar__links">Personality Test</a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="login.html" class="button">Log In</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <script src="app.js"></script>
+
     <label for="attribute">Sort by:</label>
     <!-- drop down selector -->
     <select name="attribute" id="attribute" autofocus>
