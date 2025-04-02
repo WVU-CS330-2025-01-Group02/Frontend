@@ -15,7 +15,7 @@ const questions = [
             { img: "images/cat", desc: "Bright, sunny weather" },
             { img: "images/mountains", desc: "Overcast" },
             { img: "images/onefortheroad", desc: "Muggy" },
-            { img: "images/rouge", desc: "Storm" },
+            { img: "", desc: "Storm" },
         ]
     },
     {
@@ -28,7 +28,7 @@ const questions = [
         ]
     },
     {
-        question: "What food do you like?",
+        question: "What type of food do you like?",
         options: [
             { img: "", desc: "Seafood" },
             { img: "", desc: "Tacos" },
@@ -46,12 +46,12 @@ const questions = [
         ]
     },
     {
-        question: "Random Question",
+        question: "If you had to do one thing for the rest of your life what would it be?",
         options: [
-            { img: "", desc: "1" },
-            { img: "", desc: "2" },
-            { img: "", desc: "3" },
-            { img: "", desc: "4" },
+            { img: "", desc: "Rot in bed" },
+            { img: "images/rouge", desc: "Toke up" },
+            { img: "", desc: "Code" },
+            { img: "", desc: "Go fishing" },
         ]
     }
 ];
