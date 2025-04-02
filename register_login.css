@@ -8,9 +8,10 @@ body {
     background: #f3f3f3;
     flex-direction: column;
     margin: 0;
-    background-image: url('morgantownImage.avif');
+    /* background-image: url('morgantownImage.avif');
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
+    background-color: #a3b7ff
 }
 
 .overlay {
@@ -26,7 +27,7 @@ body {
     background-color: #e0e0e0;
     opacity: 0.93;
     border-radius: 15px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.2);
     padding: 10px 20px;
     transition: transform 0.2s;
     width: 500px;
@@ -34,7 +35,13 @@ body {
 }
 
 h1 {
-    color: #03590e;
+    color: #fe938c;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    color: #000b35;
 }
 
 label {
@@ -43,7 +50,7 @@ label {
     margin-top: 10px;
     margin-bottom: 5px;
     text-align: left;
-    color: #555;
+    color: #000b35;
     font-weight: bold;
 }
 
@@ -54,11 +61,11 @@ input {
     margin-bottom: 1px;
     box-sizing: border-box;
     border: 1px solid #ddd;
-    border-radius: 5px;
+    border-radius: 50px;
 }
 button {
     padding: 15px;
-    background-color: #03590e;
+    background-color: #fe938c;
     color: white;
     border: none;
     cursor: pointer;
@@ -66,16 +73,26 @@ button {
     font-size: 16px;
     margin-top: 15px;
     margin-bottom: 15px;
+    border-radius: 50px;
+}
+
+button:hover {
+    background-color: #ff6f61;
 }
 
 p {
     justify-content: center;
+    color: #000b35;
 }
 
 a {
-    color: #0057f9;
+    color: #0037ff;
     text-decoration: none;
     text-emphasis: bold;
+}
+
+a:hover {
+    color: #ff6f61;
 }
 
 .wrap {
