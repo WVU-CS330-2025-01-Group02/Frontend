@@ -175,17 +175,30 @@ function showResults(){
     });
 
     let finalResult = "";
+    let resultImage = "";
+
     if (sunny > overcast && sunny > muggy && sunny > stormy) {
         finalResult = "You're best suited for a tropical destination!";
-    } else if (overcast > sunny && overcast > muggy && overcast > stormy) {
+        resultImage = "images/tropical_image.jpg";
+    } 
+    else if (overcast > sunny && overcast > muggy && overcast > stormy) {
         finalResult = "You'd thrive in cooler, overcast climates!";
-    } else if (muggy > sunny && muggy > overcast && muggy > stormy) {
+        resultImage = "images/overcast_.jpg";
+    } 
+    else if (muggy > sunny && muggy > overcast && muggy > stormy) {
         finalResult = "You'd enjoy humid, muggy environments!";
-    } else {
+        resultImage = "images/muggy_image.jpg";
+    } 
+    else {
         finalResult = "You'd love the thrill of stormy weather!";
+        resultImage = "images/stormy_image.jpg";
     }
+
     document.getElementById("quizOutcome").innerText = finalResult;
     document.getElementById("quizOutcome").classList.add("show");
+
+    document.querySelector("#results-container img").src = resultImage;
+    document.querySelector("#results-container img").style.display = "block";
 }
 // Initialize quiz on page load
 updateQuiz();
