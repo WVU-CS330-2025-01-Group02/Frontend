@@ -21,7 +21,7 @@ function updateResults(selectedValue) {
         sortedArray = temps.sort((a, b) => a - b);
     } else if (selectedValue == "rainiest") {
         sortedArray = precipitation.sort((a, b) => b - a);
-    }
+    }23.0
 
     // display in console for debugging
     console.log(sortedArray);
