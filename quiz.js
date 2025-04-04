@@ -24,7 +24,7 @@ const questions = [
             { img: "images/shoa_dead", desc: "Beach" },
             { img: "images/smiley", desc: "City" },
             { img: "images/ThrowDown", desc: "Forest" },
-            { img: "images/tokyodrifter", desc: "Desert" },
+            { img: "images/tokyodrifter", desc: "Mountains" },
         ]
     },
     {
@@ -33,7 +33,7 @@ const questions = [
             { img: "", desc: "Seafood" },
             { img: "", desc: "Tacos" },
             { img: "", desc: "Pizza" },
-            { img: "", desc: "Bread" },
+            { img: "", desc: "Soup" },
         ]
     },
     {
@@ -58,15 +58,25 @@ const questions = [
 
 let currentQuestion = 0;
 let progress = 0;
+let userAnswers = [];
 
 function retakeQuiz() {
     currentQuestion = 0;
     progress = 0;
+    userAnswers = [];
 
     // Reset the progress bar height
     document.getElementById("progress-bar").style.height = `${progress}%`;
 
     document.getElementById("retakeButton").style.display = "none";
+
+    // Hide results, show quiz
+    document.getElementById("results-container").style.display = "none";
+    document.querySelector(".personality__test").style.display = "block";
+
+    // Reset button visibility
+    document.getElementById("retakeButton").style.display = "none";
+    document.getElementById("backButton").style.display = "none";
 
     // Re-enable answer buttons
     document.querySelectorAll(".option").forEach(button => {
@@ -93,6 +103,9 @@ function backButton() {
 }
 
 function selectAnswer(selectedIndex) {
+
+    userAnswers.push(questions[currentQuestion].options[selectedIndex].desc); 
+
     if (currentQuestion < questions.length - 1) {
         currentQuestion++;
         progress = Math.min(progress + 20, 100); // Increase progress
@@ -108,6 +121,13 @@ function selectAnswer(selectedIndex) {
         document.querySelectorAll(".option").forEach(button => {
             button.disabled = true;
         });
+
+        document.querySelector(".personality__test").style.display = "none";
+        document.getElementById("results-container").style.display = "block";
+
+        // Generate results
+        showResults();
+
     }
 }
 
@@ -141,5 +161,44 @@ function updateQuiz() {
     document.getElementById("backButton").style.display = currentQuestion > 0 ? "inline-block" : "none";
 }
 
+function showResults(){
+    let sunny = 0;
+    let overcast = 0;
+    let muggy = 0;
+    let stormy = 0;
+
+    userAnswers.forEach(answer => {
+        if (answer == "Bright, sunny weather") sunny++;
+        else if (answer == "Overcast") overcast++;
+        else if (answer == "Muggy") muggy++;
+        else if (answer == "Storm") stormy++;
+    });
+
+    let finalResult = "";
+    let resultImage = "";
+
+    if (sunny > overcast && sunny > muggy && sunny > stormy) {
+        finalResult = "You're best suited for a tropical destination!";
+        resultImage = "images/tropical_image.jpg";
+    } 
+    else if (overcast > sunny && overcast > muggy && overcast > stormy) {
+        finalResult = "You'd thrive in cooler, overcast climates!";
+        resultImage = "images/overcast_.jpg";
+    } 
+    else if (muggy > sunny && muggy > overcast && muggy > stormy) {
+        finalResult = "You'd enjoy humid, muggy environments!";
+        resultImage = "images/muggy_image.jpg";
+    } 
+    else {
+        finalResult = "You'd love the thrill of stormy weather!";
+        resultImage = "images/stormy_image.jpg";
+    }
+
+    document.getElementById("quizOutcome").innerText = finalResult;
+    document.getElementById("quizOutcome").classList.add("show");
+
+    document.querySelector("#results-container img").src = resultImage;
+    document.querySelector("#results-container img").style.display = "block";
+}
 // Initialize quiz on page load
 updateQuiz();
