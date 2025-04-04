@@ -523,3 +523,25 @@
     justify-content: center;
     align-items: center;
 }
+
+/* Style for the results container */
+#quizOutcome {
+    display: none;  
+    font-size: 1.5rem; 
+    text-align: center; 
+    padding: 20px;
+    margin-top: 30px;
+    background-color: #f4f4f4; 
+    border: 2px solid #ddd; 
+    max-width: 600px; 
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: opacity 0.3s ease-in-out; 
+}
+
+/* When results container is displayed */
+#quizOutcome.show {
+    display: block; 
+    opacity: 1; 
+}
