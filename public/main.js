@@ -1,3 +1,12 @@
+// Dropdown menu for mobile view
+const menu = document.querySelector('#mobile-menu')
+const menuLinks = document.querySelector('.navbar__menu')
+
+menu.addEventListener('click', function() {
+    menu.classList.toggle('is-active')
+    menuLinks.classList.toggle('active')
+});
+
 // This is the main JavaScript file for Chuck's portion of the weather data getting and shit.
 document.addEventListener("DOMContentLoaded", function() {
   console.log("main.js loaded");
