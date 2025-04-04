@@ -15,7 +15,7 @@ const questions = [
             { img: "images/cat", desc: "Bright, sunny weather" },
             { img: "images/mountains", desc: "Overcast" },
             { img: "images/onefortheroad", desc: "Muggy" },
-            { img: "", desc: "Storm" },
+            { img: "images/stormy", desc: "Storm" },
         ]
     },
     {
@@ -30,28 +30,28 @@ const questions = [
     {
         question: "What type of food do you like?",
         options: [
-            { img: "", desc: "Seafood" },
-            { img: "", desc: "Tacos" },
-            { img: "", desc: "Pizza" },
-            { img: "", desc: "Soup" },
+            { img: "images/plate", desc: "Seafood" },
+            { img: "images/rice", desc: "Tacos" },
+            { img: "images/fries", desc: "Pizza" },
+            { img: "images/exposed", desc: "Soup" },
         ]
     },
     {
         question: "Pick an activity!",
         options: [
-            { img: "", desc: "Swimming" },
-            { img: "", desc: "Skiing" },
-            { img: "", desc: "Cycling" },
-            { img: "", desc: "Climbing" },
+            { img: "images/wlf", desc: "Swimming" },
+            { img: "images/boxing", desc: "Skiing" },
+            { img: "images/kidsreturnbike", desc: "Cycling" },
+            { img: "images/election", desc: "Climbing" },
         ]
     },
     {
         question: "If you had to do one thing for the rest of your life what would it be?",
         options: [
-            { img: "", desc: "Rot in bed" },
+            { img: "images/kagemusha", desc: "Rot in bed" },
             { img: "images/rouge", desc: "Toke up" },
-            { img: "", desc: "Code" },
-            { img: "", desc: "Go fishing" },
+            { img: "images/implosison", desc: "Code" },
+            { img: "images/lighthouse", desc: "Go fishing" },
         ]
     }
 ];
