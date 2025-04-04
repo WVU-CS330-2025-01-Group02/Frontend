@@ -183,15 +183,15 @@ function showResults(){
     } 
     else if (overcast > sunny && overcast > muggy && overcast > stormy) {
         finalResult = "You'd thrive in cooler, overcast climates!";
-        resultImage = "images/overcast_.jpg";
+        resultImage = "images/tropical_image.jpg";
     } 
     else if (muggy > sunny && muggy > overcast && muggy > stormy) {
         finalResult = "You'd enjoy humid, muggy environments!";
-        resultImage = "images/muggy_image.jpg";
+        resultImage = "images/tropical_image.jpg";
     } 
     else {
         finalResult = "You'd love the thrill of stormy weather!";
-        resultImage = "images/stormy_image.jpg";
+        resultImage = "images/tropical_image.jpg";
     }
 
     document.getElementById("quizOutcome").innerText = finalResult;
