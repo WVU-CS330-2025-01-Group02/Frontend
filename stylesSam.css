@@ -128,12 +128,6 @@
     padding: 20px 0;
   }
 
-  body
-  {
-    font-family: 'Just Another Hand';
-    font-style: normal;
-  }
-
   .hero-content {
     display: flex;
     flex-direction: column;
@@ -149,6 +143,123 @@
     padding: 100px 20px; /* adjust as needed */
     color: #fff; /* if your image is dark, light text looks best */
   }
+
+  .hero-section.hero-secondary {
+    background-image: url('images/rain-sky-background.png'); /* update path as needed */
+    color:#000000;
+    padding: 25px 0;
+    text-align: center;
+  }
+
+  .hero-secondary .row {
+    justify-content: center;
+  }
+  
+  .hero-secondary .col-lg-6 {
+    text-align: center;
+  }
+
+  .hero-secondary ul {
+    list-style-type: disc; 
+    padding-left: 1.5rem; 
+    text-align: left;
+  }
+  
+  .hero-secondary li {
+    margin-bottom: 8px;
+    font-size: 40px;
+    line-height: 1.4;
+  }
+  
+  .hero-secondary li strong {
+    font-size: 40px;
+    display: block;
+  }
+  
+  .hero-secondary li span {
+    font-size: 24px;
+    color: #555;
+  }
+
+  .hero-section.hero-tertiary {
+    background-image: url('images/cloud-stars-background.png'); /* update path as needed */
+    color:#000000;
+    padding: 25px 0;
+    text-align: center;
+  }
+
+  .hero-tertiary .row {
+    justify-content: center;
+  }
+  
+  .hero-tertiary .col-lg-6 {
+    text-align: center;
+  }
+
+  .hero-tertiary ul {
+    list-style-type: disc; 
+    padding-left: 1.5rem; 
+    text-align: left;
+  }
+  
+  .hero-tertiary li {
+    margin-bottom: 8px;
+    font-size: 40px;
+    line-height: 1.4;
+  }
+  
+  .hero-tertiary li strong {
+    font-size: 40px;
+    display: block;
+  }
+  
+  .hero-tertiary li span {
+    font-size: 24px;
+    color: #555;
+  }
+
+  .hero-section.hero-quaternary {
+    background-image: url('images/rain-window-background.png'); /* update path as needed */
+    color:#000000;
+    padding: 25px 0;
+    text-align: center;
+  }
+  
+  .hero-quaternary .row {
+    justify-content: center;
+  }
+  
+  .hero-quaternary .col-lg-6 {
+    text-align: center;
+  }
+
+  .hero-quaternary ul {
+    list-style-type: disc; 
+    padding-left: 1.5rem; 
+    text-align: left;
+  }
+  
+  .hero-quaternary li {
+    margin-bottom: 8px;
+    font-size: 40px;
+    line-height: 1.4;
+  }
+  
+  .hero-quaternary li strong {
+    font-size: 40px;
+    display: block;
+  }
+  
+  .hero-quaternary li span {
+    font-size: 24px;
+    color: #555;
+  }
+
+body
+{
+  font-family: 'Just Another Hand';
+  font-style: normal;
+}
 
 h1 
 {
@@ -167,9 +278,9 @@ h2
     font-family: 'Just Another Hand';
     font-style: normal;
     font-weight: 400;
-    font-size: 64px;
+    font-size: 40px;
     line-height: 72px;
-    color: #FFFFFF;
+    color: #000000;
 }
 
 h3
@@ -177,7 +288,7 @@ h3
     font-family: 'Just Another Hand';
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 24px;
+    line-height: 30px;
     color: #000000;
 }
