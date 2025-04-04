@@ -1,0 +1,294 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  * {
+    margin: 0;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      interpolate-size: allow-keywords;
+    }
+  }
+  
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  p {
+    text-wrap: pretty;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+  
+  #root, #__next {
+    isolation: isolate;
+  }
+
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: 1264px !important;
+  }
+
+  .navbar nav{
+    gap: 40px;
+  }
+
+  .navbar .nav-item .nav-link {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+    padding: 0;
+    margin-right: 25px;
+    margin-left: 25px;
+  }
+  .navbar:hover .nav-item:hover .nav-link:hover {
+    color: #5e899e;
+  }
+
+  .d-flex {
+    width: 240px;
+    padding: 80;
+    margin-right: 25px;
+    margin-left: 25px;
+  }
+
+  .btn-primary {
+    width: 320px;
+    height: 50px;
+    padding: 10px 20px;
+    border-radius: 14px;
+    background-color: #5e899e;
+    color:#FFFFFF;
+    border-color:#10386c;
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  .btn-secondary {
+    width: 120px;
+    padding: 80;
+    background-color: #5e899e;
+    color:#FFFFFF;
+    border-color:#10386c;
+  }
+
+  .btn-secondary:hover {
+    background-color: #10386c;
+  }
+
+  .btn-tertiary {
+    width: 320px;
+    height: 50px;
+    padding: 10px 20px;
+    border-radius: 14px;
+    background-color: #10386c;
+    color:#FFFFFF;
+    border-color:#051a35;
+    font-size: 24px;
+  }
+
+  .btn-primary, .btn-tertiary {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .form-control {
+    border-color:#10386c;
+    color:#10386c;
+  }
+
+  .form-control:focus {
+    border-color:#10386c;
+    box-shadow:none;
+  }
+
+  header {
+    padding: 20px 0;
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* centers items horizontally */
+    text-align: center;  /* centers the heading text */
+  }
+
+  .hero-section {
+    background-image: url('images/cloud-background.png'); /* update path as needed */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 20px; /* adjust as needed */
+    color: #fff; /* if your image is dark, light text looks best */
+  }
+
+  .hero-section.hero-secondary {
+    background-image: url('images/rain-sky-background.png'); /* update path as needed */
+    color:#000000;
+    padding: 25px 0;
+    text-align: center;
+  }
+
+  .hero-secondary .row {
+    justify-content: center;
+  }
+  
+  .hero-secondary .col-lg-6 {
+    text-align: center;
+  }
+
+  .hero-secondary ul {
+    list-style-type: disc; 
+    padding-left: 1.5rem; 
+    text-align: left;
+  }
+  
+  .hero-secondary li {
+    margin-bottom: 8px;
+    font-size: 40px;
+    line-height: 1.4;
+  }
+  
+  .hero-secondary li strong {
+    font-size: 40px;
+    display: block;
+  }
+  
+  .hero-secondary li span {
+    font-size: 24px;
+    color: #555;
+  }
+
+  .hero-section.hero-tertiary {
+    background-image: url('images/cloud-stars-background.png'); /* update path as needed */
+    color:#000000;
+    padding: 25px 0;
+    text-align: center;
+  }
+
+  .hero-tertiary .row {
+    justify-content: center;
+  }
+  
+  .hero-tertiary .col-lg-6 {
+    text-align: center;
+  }
+
+  .hero-tertiary ul {
+    list-style-type: disc; 
+    padding-left: 1.5rem; 
+    text-align: left;
+  }
+  
+  .hero-tertiary li {
+    margin-bottom: 8px;
+    font-size: 40px;
+    line-height: 1.4;
+  }
+  
+  .hero-tertiary li strong {
+    font-size: 40px;
+    display: block;
+  }
+  
+  .hero-tertiary li span {
+    font-size: 24px;
+    color: #555;
+  }
+
+  .hero-section.hero-quaternary {
+    background-image: url('images/rain-window-background.png'); /* update path as needed */
+    color:#000000;
+    padding: 25px 0;
+    text-align: center;
+  }
+  
+  .hero-quaternary .row {
+    justify-content: center;
+  }
+  
+  .hero-quaternary .col-lg-6 {
+    text-align: center;
+  }
+
+  .hero-quaternary ul {
+    list-style-type: disc; 
+    padding-left: 1.5rem; 
+    text-align: left;
+  }
+  
+  .hero-quaternary li {
+    margin-bottom: 8px;
+    font-size: 40px;
+    line-height: 1.4;
+  }
+  
+  .hero-quaternary li strong {
+    font-size: 40px;
+    display: block;
+  }
+  
+  .hero-quaternary li span {
+    font-size: 24px;
+    color: #555;
+  }
+
+body
+{
+  font-family: 'Just Another Hand';
+  font-style: normal;
+}
+
+h1 
+{
+    /* Weather We Go */
+    font-family: 'Just Another Hand';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 112px;
+    color: #000000;
+}
+
+h2
+{
+    /* Find your ideal travel destination! */
+    font-family: 'Just Another Hand';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 72px;
+    color: #000000;
+}
+
+h3
+{
+    font-family: 'Just Another Hand';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    color: #000000;
+}
