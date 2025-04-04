@@ -198,7 +198,7 @@
 
 /* Hero Section */
 .main {
-    background-color: #a3b7ff;
+    background-color: #000b35;
 }
 
 .main__container {
@@ -208,7 +208,7 @@
     justify-self: center;
     margin: 0 auto;
     height: 90vh;
-    background-color: #a3b7ff;
+    background-color: #000b35;
     z-index: 1;
     width: 100%;
     max-width: 1300px;
@@ -218,7 +218,7 @@
 .main__content h1 {
     font-size: 4rem;
     background-color: #0037ff;
-    background-image: linear-gradient(to top, #000b35 0%, #0037ff 100%);
+    background-image: linear-gradient(to top, #0037ff 0%, #fff 100%);
     background-size: 100%;
     background-clip: text;
     -webkit-background-clip: text;
@@ -230,7 +230,7 @@
 .main__content h2 {
     font-size: 4rem;
     background-color: #0037ff;
-    background-image: linear-gradient(to top, #000b35 0%, #0037ff 100%);
+    background-image: linear-gradient(to top, #fe938c 0%, #fff 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -243,6 +243,7 @@
     font-size: 2rem;
     margin-top: 1rem;
     font-weight: 700;
+    padding-bottom: 2rem;
     color: #fff;
 }
 
@@ -354,19 +355,12 @@
 }
 
 .services h1 {
-    background-color: #fe938c;
-    background-image: linear-gradient(
-        to right, 
-        #fe938c 0%, 
-        #ff867a 0%, 
-        #ff8c7f 21%, 
-        #f99185 52%, 
-        #cf556c 78%, 
-        #b12a5b 100%
-    );
+    background-color: #000B35;
+    color: #000B35;
     background-size: 100%;
     margin-bottom: 5rem;
     font-size: 2.5rem;
+    padding-top: 5rem;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
@@ -389,7 +383,7 @@
         to bottom, 
         rgba(0, 0, 0, 0) 0%, 
         rgba(17, 17, 17, 0.6) 100%
-    ), url('/images/example1.jpg');
+    ), url('/images/trees.jpg');
     background-size: cover;
     position: relative;
     color: #fff;
@@ -400,7 +394,7 @@
         to bottom, 
         rgba(0, 0, 0, 0) 0%, 
         rgba(17, 17, 17, 0.6) 100%
-    ), url('/images/example2.jpg');
+    ), url('/images/city.jpg');
 }
 
 .services h2 {
@@ -442,7 +436,7 @@
 
     .services h1 {
         font-size: 2rem;
-        margin-top: 12rem;
+        margin-top: 4rem;
     }
 }
 
