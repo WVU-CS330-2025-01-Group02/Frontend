@@ -7,6 +7,21 @@ menu.addEventListener('click', function() {
     menuLinks.classList.toggle('active')
 });
 
+// Scroll animation
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        console.log(entry)
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show')
+        }
+        else {
+            entry.target.classList.remove('show')
+        }
+    })
+})
+const hiddenElements = document.querySelectorAll('.hidden')
+hiddenElements.forEach((el) => observer.observe(el))
+
 // This is the main JavaScript file for Chuck's portion of the weather data getting and shit.
 document.addEventListener("DOMContentLoaded", function() {
   console.log("main.js loaded");
@@ -173,6 +188,7 @@ function hideLoading() {
 
       // the big logic stuff that acutally looks for the weather (and hopefully more to display later)
       // ------------------------------------------------
+      /*
       function positionSuccess({ coords }) {
         console.log("Location obtained:", coords.latitude, coords.longitude);
         getWeather(
@@ -187,6 +203,7 @@ function hideLoading() {
             alert("Error getting weather: " + e.message);
           });
       }
+      */
 
       function positionError(error) {
         function positionError(error) {

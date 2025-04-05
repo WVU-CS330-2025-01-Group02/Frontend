@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather We Go</title>
     <link rel="stylesheet" href="site.css">
+    <script defer src="main.js"></script>
 </head>
 <body>
     <!-- Navigation Bar -->
@@ -18,7 +19,7 @@
             </div>
             <ul class="navbar__menu">
                 <li class="navbar__item">
-                    <a href="index.html" class="navbar__links">Home</a>
+                    <a href="index.html" class="navbar__links" style="color: #fe938c">Home</a>
                 </li>
                 <li class="navbar__item">
                     <a href="sigma.html" class="navbar__links">Find a Walkability</a>
@@ -39,33 +40,33 @@
     <!-- Hero Section -->
     <div class="main">
         <div class="main__container">
-            <div class="main__content">
+            <div class="main__content hidden">
                 <h1>WEATHER WE GO</h1>
                 <h2>United States Edition</h2>
                 <p>Find your ideal weather destination.</p>
                 <button class="main__btn">
-                    <a href="/">Get Started</a>
+                    <a href="/public/sigma.html">Search an Address</a>
                 </button>
             </div>
-            <div class="main__img--container">
-                <img src="icons/weather-illustration.svg" alt="Weather weather-illustration" id="main__img">
+            <div class="main__img--container hidden">
+                <img src="images/weather-illustration.svg" alt="Weather weather-illustration" id="main__img">
             </div>
         </div>
     </div>
 
     <!-- Services Section -->
     <div class="services">
-        <h1>Find the weather for you!</h1>
+        <h1 class="hidden">Find the perfect conditions for you!</h1>
         <div class="services__container">
-            <div class="services__card">
+            <div class="services__card hidden">
                 <h2>Personality Test</h2>
                 <p>Find a weather destination for you.</p>
-                <button>Take Test</button>
+                <a href="/public/personality_test.html"><button>Take Test</button></a>
             </div>
-            <div class="services__card">
+            <div class="services__card hidden">
                 <h2>Top Cities</h2>
                 <p>Find the best cities for your needs.</p>
-                <button>Top Cities</button>
+                <a href="/public/top-cities.html"><button>Top Cities</button></a>
             </div>
         </div>
     </div>
@@ -84,12 +85,13 @@
                     <a href="/">Travor Dinh</a>
                     <a href="/">Matthew Lindsay</a>
                     <a href="/">Wesley Davis</a>
+                </div>
             </div>
         </div>
         <div class="social__media">
             <div class="social__media--wrap">
                 <div class="footer__logo">
-                    <a href="/" id="footer__logo"><i class="wwg-logo">
+                    <a href="/public/index.html" id="footer__logo"><i class="wwg-logo">
                     </i>WeatherWeGo</a>
                 </div>
                 <p class="website__rights">© WeatherWeGo 2025. All rights reserved</p>
@@ -122,7 +124,5 @@
             </div>
         </div>
     </div>
-
-    <script src="main.js"></script>
 </body>
 </html>
