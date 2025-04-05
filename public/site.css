@@ -5,6 +5,20 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/* Scroll Transitions */
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: transform 1s ease;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
 /* Navigation Bar */
 .navbar {
     background: #000B35;
@@ -25,7 +39,7 @@
     z-index: 1;
     width: 100%;
     max-width: 1300px;
-    padding: 0 50px;
+    padding: 0 25px;
     margin: 0 auto;
 }
 
@@ -207,7 +221,7 @@
     align-items: center;
     justify-self: center;
     margin: 0 auto;
-    height: 90vh;
+    height: 92vh;
     background-color: #000b35;
     z-index: 1;
     width: 100%;
@@ -316,11 +330,16 @@
 
     .main__content h2 {
         font-size: 3rem;
+        margin-top: .5rem;
     }
 
     .main__content p {
         margin-top: 1rem;
         font-size: 1.5rem;
+    }
+
+    .main__img--container {
+        margin-bottom: 5rem;
     }
 }
 
@@ -351,14 +370,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
+    height: 120vh;
 }
 
 .services h1 {
     background-color: #000B35;
     color: #000B35;
     background-size: 100%;
-    margin-bottom: 5rem;
+    margin: 5rem;
     font-size: 2.5rem;
     padding-top: 5rem;
     -webkit-background-clip: text;
@@ -366,6 +385,7 @@
     background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
+    text-align: center;
 }
 
 .services__container {
@@ -383,7 +403,7 @@
         to bottom, 
         rgba(0, 0, 0, 0) 0%, 
         rgba(17, 17, 17, 0.6) 100%
-    ), url('/images/trees.jpg');
+    ), url('/public/images/trees.jpg');
     background-size: cover;
     position: relative;
     color: #fff;
@@ -394,7 +414,7 @@
         to bottom, 
         rgba(0, 0, 0, 0) 0%, 
         rgba(17, 17, 17, 0.6) 100%
-    ), url('/images/city.jpg');
+    ), url('/public/images/city.jpg');
 }
 
 .services h2 {
@@ -423,6 +443,11 @@
     cursor: pointer;
 }
 
+.services__card button:hover {
+    background: #0037ff;
+    transition: all 0.3s ease;
+}
+
 .services__card:hover {
     transform: scale(1.075);
     transition: 0.2s ease-in;
@@ -436,7 +461,7 @@
 
     .services h1 {
         font-size: 2rem;
-        margin-top: 4rem;
+        margin-top: 2rem;
     }
 }
 
