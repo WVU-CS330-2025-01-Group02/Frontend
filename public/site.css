@@ -892,4 +892,265 @@
     align-items: center;
 }
 
+/* Find a Walkability Page */
+.sigma--body {
+    margin: 0;
+    background-color: #a3b7ff;
+    color: hsl(200, 100%, 10%);
+    font-family: sans-serif;
+}
+  
+  .blurred {
+    filter: blur(3px);
+    overflow: hidden; 
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header-left {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border-right: 2px solid hsl(200, 100%, 10%);
+  }
+  
+  .weather-icon {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+  }
+  
+  .weather-icon.large {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .header-current-temp {
+    font-size: 2rem;
+    margin-left: 1rem;
+  }
+  
+  .header-right {
+    display: grid;
+    width: 50%;
+    justify-content: space-around;
+    gap: 0.5rem;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+  }
+  
+  .info-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .label {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.6rem;
+    color: hsl(200, 100%, 20%);
+  }
+  
+  .value-sub-info {
+    font-weight: lighter;
+    font-size: 0.75rem;
+  }
+  
+  .day-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 75px);
+    gap: 0.5rem;
+    justify-content: center;
+    padding: 1rem;
+  }
+  
+  .day-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid hsl(200, 100%, 10%);
+    border-radius: 0.25rem;
+    padding: 0.25rem;
+  }
+  
+  .day-card-day {
+    font-size: 0.75rem;
+    color: hsl(200, 100%, 20%);
+    margin-top: 0.5rem;
+  }
+  
+  .hour-section {
+    width: 100%;
+    text-align: center;
+    border-spacing: 0;
+  }
+  
+  .hour-row {
+    background-color: #a3b7ff
+  }
+  
+  .hour-row:nth-child(2n) {
+    background-color: #d4ddff;
+  }
+  
+  .hour-row > td {
+    padding: 0.25rem 0.5rem;
+  }
+  
+  .search {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 
+  .search__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+  
+  #searchInput {
+    height: 35px;
+    width: 283px;
+    border-radius: 20px 0 0 20px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+  }
+  
+  #searchButton {
+    height: 35px;
+    border: none;
+    background-color: #FE938C;
+    color: white;
+    padding: 0 15px;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+  }
+  
+  #searchButton:hover {
+    background-color: #ff6f61;
+  }
+  
+  /* style for these horrible interactive day cards */
+  .day-card {
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: 1px solid hsl(200, 100%, 10%);
+    background-color: hsla(200, 60%, 75%, 0.3);
+  }
+  
+  .day-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: hsla(200, 60%, 75%, 0.6);
+  }
+  
+  .day-card.selected {
+    background-color: hsla(200, 60%, 75%, 1);
+    border: 2px solid hsl(200, 100%, 10%);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* this is a nice little day/hour toggle style i found */
+  .hour-section-container {
+    position: relative;
+  }
+  
+  .day-selector {
+    padding: 10px;
+    background-color: #d4ddff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border-bottom: 1px solid hsl(200, 100%, 10%);
+  }
+  
+  @media screen and (max-width: 960px) {
+    .navbar__search {
+      width: 100%;
+      margin: 1rem 0;
+      justify-content: center;
+    }
+  }
+  
+  /* Loading throbber */
+  .loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .throbber {
+    width: 100px;
+    height: 100px;
+    border: 10px solid #f3f3f3;
+    border-top: 10px solid #0037FF;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 20px;
+  }
+  
+  .loading-message {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  /* Geolocation button styles */
+  .geolocation-button {
+    height: 35px;
+    width: 35px;
+    border: none;
+    background-color: #0037FF;
+    color: white;
+    margin-left: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    transition: background-color 0.3s;
+  }
+  
+  .geolocation-button:hover {
+    background-color: #002aad;
+  }
+  
+  .geo-icon {
+    width: 18px;
+    height: 18px;
+    filter: brightness(0) invert(1); /* Makes the icon white */
+  }
