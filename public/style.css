@@ -564,6 +564,8 @@
   align-items: center;
 }
 
+
+/* Find a Walkability Page */
 body {
   margin: 0;
   background-color: #a3b7ff;
@@ -675,7 +677,7 @@ body {
   padding: 0.25rem 0.5rem;
 }
 
-.navbar__search {
+.search {
   display: flex;
   align-items: center;
   margin-left: 20px;

@@ -5,15 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather We Go - Weather Data</title>
 
-    <link rel="stylesheet" href="./site.css">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="site.css">
       
       <!-- Chuck's website that is aboslutely based on someone else's website that needs to be changed
 to remove my styling and JS in there to the stylesheet and merge it into the Site.css -->
 
 
   </head>
-  <body class="blurred">
+  <body class="sigma--body blurred">
 
     <div class="loading-overlay" id="loadingOverlay">
       <div class="throbber"></div>
@@ -25,6 +24,7 @@ to remove my styling and JS in there to the stylesheet and merge it into the Sit
             <a href="index.html" id="navbar__logo">WeatherWeGo</a>
             
             <!-- Added search bar based kinda on Matt's code and then the site's style -->
+            <!--
             <div class="navbar__search">
                 <input type="text" id="searchInput" placeholder="Enter address..." />
                 <button id="searchButton">Search</button>
@@ -32,6 +32,7 @@ to remove my styling and JS in there to the stylesheet and merge it into the Sit
                   <img src="icons/geolocator.svg" alt="Current location" class="geo-icon">
               </button>
             </div>
+            -->
             
             <div class="navbar__toggle" id="mobile-menu">
                 <span class="bar"></span>
@@ -57,6 +58,17 @@ to remove my styling and JS in there to the stylesheet and merge it into the Sit
             </ul>
         </div>
     </nav>
+
+    <!-- Section below nav bar for search bar -->
+    <div class="search">
+      <div class="search__container">
+        <input type="text" id="searchInput" placeholder="Enter address..." />
+        <button id="searchButton">Search</button>
+        <button id="geolocateButton" class="geolocation-button" title="Use my current location">
+          <img src="icons/geolocator.svg" alt="Current location" class="geo-icon">
+        </button>
+      </div>
+    </div>
     
 <!-- Weather Content -->
 <div class="weather-container" style="margin-top: 80px;">
