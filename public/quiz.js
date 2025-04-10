@@ -6,6 +6,8 @@ jQUERY stuff too maybe.
 Fixed bugs
 Make another finished message that's not a browser message. 
 Instead of a finished message, add a results page that accesses the database
+
+NOTES for Questions: Pricing, Basic Weather, Adverse Weather, and Walkability
 */
 
 const questions = [
