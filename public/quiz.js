@@ -162,7 +162,7 @@ function backButton() {
     });
     if (currentQuestion > 0) {
         currentQuestion--;
-        progress = Math.max(progress - 20, 0); // Decrease progress
+        progress = Math.max(progress - 8, 0); // Decrease progress
         updateQuiz();
     }
     if(currentQuestion == 0){
@@ -178,7 +178,7 @@ function selectAnswer(selectedIndex) {
 
     if (currentQuestion < questions.length - 1) {
         currentQuestion++;
-        progress = Math.min(progress + 20, 100); // Increase progress
+        progress = Math.min(progress + 8, 100); // Increase progress
         updateQuiz();
     } else {
         // When on the last question, set progress to 100%
