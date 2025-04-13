@@ -12,50 +12,118 @@ NOTES for Questions: Pricing, Basic Weather, Adverse Weather, and Walkability
 
 const questions = [
     {
-        question: "What type of weather do you like?",
+        // Basic Weather
+        question: "What type of weather do you prefer?",
         options: [
-            { img: "images/cat", desc: "Bright, sunny weather" },
-            { img: "images/mountains", desc: "Overcast" },
-            { img: "images/onefortheroad", desc: "Muggy" },
-            { img: "images/stormy", desc: "Storm" },
+            { img: "images/cat", desc: "Bright, sunny weather year-round" },
+            { img: "images/mountains", desc: "A cool breeze and an overcast sky" },
+            { img: "images/onefortheroad", desc: "Mild weather with some sunshine" },
+            { img: "images/stormy", desc: "A mix of all seasons" },
         ]
     },
     {
         question: "Pick a vacation destination!",
         options: [
-            { img: "images/shoa_dead", desc: "Beach" },
-            { img: "images/smiley", desc: "City" },
-            { img: "images/ThrowDown", desc: "Forest" },
-            { img: "images/tokyodrifter", desc: "Mountains" },
-        ]
-    },
-    {
-        question: "What type of food do you like?",
-        options: [
-            { img: "images/plate", desc: "Seafood" },
-            { img: "images/rice", desc: "Tacos" },
-            { img: "images/fries", desc: "Pizza" },
-            { img: "images/exposed", desc: "Soup" },
+            { img: "images/shoa_dead", desc: "A sunny beach town" },
+            { img: "images/smiley", desc: "An urban city" },
+            { img: "images/ThrowDown", desc: "A cozy forest cabin" },
+            { img: "images/tokyodrifter", desc: "A remote mountain village" },
         ]
     },
     {
         question: "Pick an activity!",
         options: [
-            { img: "images/wlf", desc: "Swimming" },
-            { img: "images/boxing", desc: "Skiing" },
-            { img: "images/kidsreturnbike", desc: "Cycling" },
-            { img: "images/election", desc: "Climbing" },
+            { img: "images/wlf", desc: "Swimming in the ocean" },
+            { img: "images/boxing", desc: "Skiing down snowy slopes" },
+            { img: "images/kidsreturnbike", desc: "Skateboarding through the city" },
+            { img: "images/election", desc: "Climbing or hiking outdoors" },
         ]
     },
     {
-        question: "If you had to do one thing for the rest of your life what would it be?",
+        // Adverse weather
+        question: "Which of these weather conditions would be the worst to you?",
         options: [
-            { img: "images/kagemusha", desc: "Rot in bed" },
-            { img: "images/rouge", desc: "Toke up" },
-            { img: "images/implosison", desc: "Code" },
-            { img: "images/lighthouse", desc: "Go fishing" },
+            { img: "images/wlf", desc: "Heat waves" },
+            { img: "images/boxing", desc: "Heavy snowstorms" },
+            { img: "images/kidsreturnbike", desc: "Torrential rains" },
+            { img: "images/election", desc: "Strong winds" },
+        ]
+    },
+    {
+        question: "How do you feel about possible adverse weather?",
+        options: [
+            { img: "images/kagemusha", desc: "I like to stay indoors" },
+            { img: "images/rouge", desc: "I prepare with the appropriate gear and clothing" },
+            { img: "images/implosison", desc: "It's an opportunity to experience something new" },
+            { img: "images/lighthouse", desc: "I'll make plans around it" },
+        ]
+    },
+    {
+        question: "Which seasons do you prefer most?",
+        options: [
+            { img: "images/kagemusha", desc: "Long summer days with lots of sunshine" },
+            { img: "images/rouge", desc: "The mild weather that comes with spring" },
+            { img: "images/implosison", desc: "The cool air and changing leaves of autumn" },
+            { img: "images/lighthouse", desc: "Winter" },
+        ]
+    },
+    {
+        // Pricing
+        question: "What's your budget for your next trip?",
+        options: [
+            { img: "images/kagemusha", desc: "I like to save" },
+            { img: "images/rouge", desc: "I'll spend money as long as I get value from the purchase" },
+            { img: "images/implosison", desc: "I like to splurge on conveniences and comfort" },
+            { img: "images/lighthouse", desc: "Money is not a factor" },
+        ]
+    },
+    {
+        question: "How important is the affordability of a destination to you?",
+        options: [
+            { img: "images/kagemusha", desc: "Very important" },
+            { img: "images/rouge", desc: "A good balance between price and comfort" },
+            { img: "images/implosison", desc: "I'll pay more for location and style" },
+            { img: "images/lighthouse", desc: "Quality first, price later" },
+        ]
+    },
+    {
+        question: "How much do you usually spend while travelling or living?",
+        options: [
+            { img: "images/kagemusha", desc: "Essentials only" },
+            { img: "images/rouge", desc: "I have a budget for the things I want to do" },
+            { img: "images/implosison", desc: "I'll go out to dine and for fun" },
+            { img: "images/lighthouse", desc: "I like to indulge in shopping and luxury" },
+        ]
+    },
+    {
+        // Walkability
+        question: "What kind of environment is most appealing?",
+        options: [
+            { img: "images/kagemusha", desc: "A dense, walkable city" },
+            { img: "images/rouge", desc: "Suburbia or a small town" },
+            { img: "images/implosison", desc: "A rural place" },
+            { img: "images/lighthouse", desc: "A neighborhood with a mix of walking and driving" },
+        ]
+    },
+    {
+        question: "How important is the ability to walk to destinations to you?",
+        options: [
+            { img: "images/kagemusha", desc: "Very important" },
+            { img: "images/rouge", desc: "I'd like to walk but not to everything" },
+            { img: "images/implosison", desc: "I don't mind driving to most locations" },
+            { img: "images/lighthouse", desc: "I enjoy driving and open space" },
+        ]
+    },
+    {
+        question: "What's you most preferable daily commute?",
+        options: [
+            { img: "images/kagemusha", desc: "Public transport" },
+            { img: "images/rouge", desc: "Walking" },
+            { img: "images/implosison", desc: "Driving" },
+            { img: "images/lighthouse", desc: "Biking or other similar means" },
         ]
     }
+    
 ];
 
 let currentQuestion = 0;
