@@ -239,7 +239,6 @@ function showResults(){
     let mix = 0;
     
     // adverse weather vars
-    
 
     // pricing vars
 
