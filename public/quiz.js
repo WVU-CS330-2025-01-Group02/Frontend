@@ -18,7 +18,7 @@ const questions = [
             { img: "images/cat", desc: "Bright, sunny weather year-round" },
             { img: "images/mountains", desc: "A cool breeze and an overcast sky" },
             { img: "images/onefortheroad", desc: "Mild weather with some sunshine" },
-            { img: "images/stormy", desc: "A mix of all seasons" },
+            { img: "images/mix", desc: "A mix of all seasons" },
         ]
     },
     {
@@ -232,35 +232,43 @@ function updateQuiz() {
 }
 
 function showResults(){
+    // basic weather vars
     let sunny = 0;
     let overcast = 0;
-    let muggy = 0;
-    let stormy = 0;
+    let mild = 0;
+    let mix = 0;
+    
+    // adverse weather vars
+    
+
+    // pricing vars
+
+    // walk vars
 
     userAnswers.forEach(answer => {
         if (answer == "Bright, sunny weather") sunny++;
         else if (answer == "Overcast") overcast++;
-        else if (answer == "Muggy") muggy++;
-        else if (answer == "Storm") stormy++;
+        else if (answer == "mild") mild++;
+        else if (answer == "Storm") mix++;
     });
 
     let finalResult = "";
     let resultImage = "";
 
-    if (sunny > overcast && sunny > muggy && sunny > stormy) {
+    if (sunny > overcast && sunny > mild && sunny > mix) {
         finalResult = "You're best suited for a tropical destination!";
         resultImage = "images/tropical_image.jpg";
     } 
-    else if (overcast > sunny && overcast > muggy && overcast > stormy) {
+    else if (overcast > sunny && overcast > mild && overcast > mix) {
         finalResult = "You'd thrive in cooler, overcast climates!";
         resultImage = "images/tropical_image.jpg";
     } 
-    else if (muggy > sunny && muggy > overcast && muggy > stormy) {
-        finalResult = "You'd enjoy humid, muggy environments!";
+    else if (mild > sunny && mild > overcast && mild > mix) {
+        finalResult = "You'd enjoy humid, mild environments!";
         resultImage = "images/tropical_image.jpg";
     } 
     else {
-        finalResult = "You'd love the thrill of stormy weather!";
+        finalResult = "You'd love the thrill of mix weather!";
         resultImage = "images/tropical_image.jpg";
     }
 
