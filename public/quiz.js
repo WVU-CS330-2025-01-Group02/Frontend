@@ -239,6 +239,11 @@ function showResults(){
     let mix = 0;
     
     // adverse weather vars
+    let storm = 0;
+    let snowstorm = 0;
+    let heatwave = 0;
+    let strong_winds = 0;
+    let adverse = 0; 
 
     // pricing vars
     let cheap = 0;
