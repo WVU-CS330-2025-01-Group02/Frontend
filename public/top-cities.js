@@ -1,4 +1,4 @@
-const selectElement = document.getElementById("attribute");
+// const selectElement = document.getElementById("attribute"); // unnecesarry when using feature/top-cities-dropdown-filter
 const resultsDiv = document.getElementById("results");
 
 const overall = [1, 2, 3, 4, 5]; // will be replaced with API call
@@ -21,7 +21,7 @@ function updateResults(selectedValue) {
         sortedArray = temps.sort((a, b) => a - b);
     } else if (selectedValue == "rainiest") {
         sortedArray = precipitation.sort((a, b) => b - a);
-    }23.0
+    }
 
     // display in console for debugging
     console.log(sortedArray);
@@ -33,8 +33,26 @@ function updateResults(selectedValue) {
 // if no attribute is selected, auto select overall
 updateResults("overall");
 
-// when attribute is changed, call updateResults()
-selectElement.addEventListener("change", function() {
-    updateResults(selectElement.value);
+// Handle dropdown link clicks to update the results
+const dropdownLinks = document.querySelectorAll(".dropdown a");
+
+dropdownLinks.forEach(link => {
+    link.addEventListener("click", function(event) {
+        event.preventDefault();  // prevent default link behavior
+        const selectedFilter = link.getAttribute("data-filter");
+        updateResults(selectedFilter);
+
+        // Update dropdown label text to selected option
+        document.querySelector(".dropdown label span").textContent = link.textContent.toLowerCase();
+        // Close the dropdown menu
+        document.getElementById("touch").checked = false;
+    });
+
+
+// commented out the below for feature/top-cities-dropdown-filter implementation
+
+    // when attribute is changed, call updateResults()
+    // selectElement.addEventListener("change", function() {
+    //     updateResults(selectElement.value);
 
 });
