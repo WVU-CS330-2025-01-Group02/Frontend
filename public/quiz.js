@@ -241,8 +241,14 @@ function showResults(){
     // adverse weather vars
 
     // pricing vars
+    let cheap = 0;
+    let moderate = 0;
+    let costly = 0;
+    let luxury = 0;
 
     // walk vars
+    let walk = 0;
+    let drive = 0;
 
     userAnswers.forEach(answer => {
         if (answer == "Bright, sunny weather") sunny++;
