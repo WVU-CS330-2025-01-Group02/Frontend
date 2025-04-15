@@ -19,6 +19,13 @@
     transform: translateX(0);
 }
 
+
+/*
+REVIEW BEGINS
+    HERE
+*/
+
+
 /* Navigation Bar */
 .navbar {
     background: #000B35;
@@ -209,6 +216,12 @@
         transform: translateY(-8px) rotate(-45deg);
     }
 }
+
+
+/*
+REVIEW ENDS
+    HERE
+*/
 
 /* Hero Section */
 .main {
@@ -1194,7 +1207,11 @@
 }
 
 .dropdown .slide li {
-    padding : 30px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding : 9px;
+    font-variant: small-caps;
+    font-display: bold;
 }
 
 .dropdown #touch {
@@ -1202,8 +1219,13 @@
 }    
 
 .dropdown #touch:checked ~ .slide {
-    height: 300px;
+    height: 213px;
 } 
+
+.dropdown .slide li:hover {
+    background: #a3b7ff;
+    color: #fff;
+}
 
 
 
