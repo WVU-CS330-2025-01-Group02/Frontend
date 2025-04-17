@@ -630,6 +630,8 @@ REVIEW ENDS
     text-align: center;
     margin: 0;
     padding: 0;
+    border-radius: 10px;
+    border: 5px solid #fe938c;
     background-color: #a3b7ff;
 }
 
@@ -648,7 +650,7 @@ REVIEW ENDS
 }
 
 .progress-bar {
-    background: black;
+    background: #FE938C;
     transition: height 0.3s ease-in-out;
 }
 
@@ -658,7 +660,9 @@ REVIEW ENDS
     margin-top: 50px;
     padding: 20px;
     background: white;
+    color: #000b35;
     border: 2px solid black;
+    border-radius: 10px;
     display: inline-block;
     width: 60%;
 }
@@ -682,7 +686,9 @@ REVIEW ENDS
     width: 100%; /* Wider */
     
     background: white;
-    border: 2px solid black;
+    color: #000b35;
+    border: 2px solid #000b35;
+    border-radius: 10px;
     padding: 10px;
     text-align: center;
     cursor: pointer;
@@ -728,6 +734,7 @@ REVIEW ENDS
     border-radius: 5px; 
     cursor: pointer; 
     margin-top: 20px; 
+    margin-bottom: 20px;
     display: none; 
 }
 
@@ -741,8 +748,9 @@ REVIEW ENDS
     font-size: 1.5rem; 
     text-align: center; 
     padding: 20px;
+    border-radius: 10px;
     margin-top: 30px;
-    background-color: #f4f4f4; 
+    background-color: #a3b7ff; 
     border: 2px solid #ddd; 
     max-width: 600px; 
     margin-left: auto;
@@ -760,7 +768,10 @@ REVIEW ENDS
 #results-container {
     text-align: center;
     margin-top: 20px;
-    background-color: #a3b7ff;
+    background-color: #000b35;
+    padding: 2rem;
+    border-radius: 8px;
+    color: white;
 }
 
 
@@ -1227,5 +1238,70 @@ REVIEW ENDS
     color: #fff;
 }
 
-
-
+.main__container.vertical-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem 1rem;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Responsive content block */
+  .main__content {
+    max-width: 800px;
+    padding: 1rem;
+  }
+  
+  .main__content h1 {
+    font-size: 3rem;
+  }
+  
+  .main__content h2 {
+    font-size: 2rem;
+  }
+  
+  .main__content p {
+    font-size: 1.25rem;
+  }
+  
+  /* Responsive adjustments */
+  @media screen and (max-width: 600px) {
+    .main__content h1 {
+      font-size: 2rem;
+    }
+  
+    .main__content h2 {
+      font-size: 1.5rem;
+    }
+  
+    .main__content p {
+      font-size: 1rem;
+    }
+  
+    .options-container {
+      grid-template-columns: 1fr;
+      width: 90%;
+    }
+  
+    .question {
+      width: 90%;
+    }
+  
+    .option img {
+      max-height: 100px;
+      height: auto;
+    }
+  
+    .option p {
+      margin-top: 10px;
+    }
+  
+    .main__btn {
+      width: 80%;
+      padding: 12px;
+    }
+  }
